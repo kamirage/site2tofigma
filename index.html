@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Галерея</title>
+    <link href='https://fonts.googleapis.com/css?family=Cormorant SC' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- кнопка темы -->
+    <div class="top-container">
+        <button id="themeBtn" onclick="changeTheme()">
+            <img src="media/moon.svg" width="25" id="icon">
+        </button>
+    </div>
+    
+    <!-- поиск -->
+    <div class="top-container">
+        <input type="text" class="search" placeholder="&#128269; Painting title">
+        <button class="menu" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </button>
+    </div>
+    
+    <!-- фильтры -->
+    <div class="filterBox" id="filterBox" style="display: none;">
+        <button class="close" onclick="closeMenu()">x</button>
+        <ul>
+            <li>ARTIST</li>
+            <li>LOCATION</li>
+            <li>YEAR</li>
+        </ul>
+        <a href="#" class="btn">SHOW THE RESULTS</a>
+        <a href="#" class="btn2">CLEAR</a>
+    </div>
+    
+    <!-- карточки -->
+    <div class="cards">
+        
+        <div class="card" style="background-image: url('media/image1.png');">
+            <div class="info">
+                <p class="title">CASCATE DI TIVOLI</p>
+                <p class="year">1761</p>
+            </div>
+        </div>
+        
+        <div class="card" style="background-image: url('media/image2.png');">
+            <div class="info">
+                <p class="title">PORTRAIT OF VINCENT VAN GOGH</p>
+                <p class="year">1886</p>
+            </div>
+        </div>
+        
+        <div class="card" style="background-image: url('media/image3.png');">
+            <div class="info">
+                <p class="title">UNEQUAL MARRIAGE</p>
+                <p class="year">1862</p>
+            </div>
+        </div>
+        
+        <div class="card" style="background-image: url('media/image4.png');">
+            <div class="info">
+                <p class="title">THE HAPPY VIOLINIST</p>
+                <p class="year">1624</p>
+            </div>
+        </div>
+        
+        <div class="card" style="background-image: url('media/image5.png');">
+            <div class="info">
+                <p class="title">THE ARCADIAN</p>
+                <p class="year">1834</p>
+            </div>
+        </div>
+        
+        <div class="card" style="background-image: url('media/image6.png');">
+            <div class="info">
+                <p class="title">GOLFO DI NAPOLI</p>
+                <p class="year">1845</p>
+            </div>
+        </div>
+        
+    </div>
+    
+    <div style="text-align: center; margin: 50px;">
+        <p>&lt; 1 2 3 ... 9 &gt;</p>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
