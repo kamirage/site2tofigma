@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="top-bar">
+        <div class="wrap container">
+            <div class="controls">
+                <div class="search-box">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 14C10.866 14 14 10.866 14 7C14 3.13401 10.866 0 7 0C3.13401 0 0 3.13401 0 7C0 10.866 3.13401 14 7 14ZM7 12C9.76142 12 12 9.76142 12 7C12 4.23858 9.76142 2 7 2C4.23858 2 2 4.23858 2 7C2 9.76142 4.23858 12 7 12Z" fill="currentColor"/>
+                        <path d="M11.3137 11.3137L15.6569 15.6569" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <input type="text" placeholder="Search...">
+                </div>
+                
+                <div class="icon-action">
+                    <button id="filter-btn">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 5H17V7H3V5ZM5 9H15V11H5V9ZM7 13H13V15H7V13Z" fill="currentColor"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="theme-switch">
+                    <div class="circle-btn">
+                        <button class="btn-theme"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="grid">
+            <!-- Card 1 -->
+            <div class="card img-1">
+                <div class="info-panel">
+                    <div class="divider"></div>
+                    <div class="wrapper">
+                        <div class="txt default">
+                            <div class="t-top">Cascate di Tivoli</div>
+                            <div class="t-bot">1761</div>
+                        </div>
+                        <div class="txt hover">
+                            <div class="t-top">Jean-Honore Fragonard</div>
+                            <div class="t-bot">Louvre Museum</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="arrow-indicator">
+                    <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L8 8L1 15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card img-2">
+                <div class="info-panel">
+                    <div class="divider"></div>
+                    <div class="wrapper">
+                        <div class="txt default">
+                            <div class="t-top">Portrait of Vincent van Gogh</div>
+                            <div class="t-bot">1886</div>
+                        </div>
+                        <div class="txt hover">
+                            <div class="t-top">Jean-Honore Fragonard</div>
+                            <div class="t-bot">Louvre Museum</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="arrow-indicator">
+                    <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L8 8L1 15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card img-3">
+                <div class="info-panel">
+                    <div class="divider"></div>
+                    <div class="wrapper">
+                        <div class="txt default">
+                            <div class="t-top">Unequal marriage</div>
+                            <div class="t-bot">1882</div>
+                        </div>
+                        <div class="txt hover">
+                            <div class="t-top">Jean-Honore Fragonard</div>
+                            <div class="t-bot">Louvre Museum</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="arrow-indicator">
+                    <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L8 8L1 15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="card img-4">
+                <div class="info-panel">
+                    <div class="divider"></div>
+                    <div class="wrapper">
+                        <div class="txt default">
+                            <div class="t-top">The happy Violinist</div>
+                            <div class="t-bot">1624</div>
+                        </div>
+                        <div class="txt hover">
+                            <div class="t-top">Jean-Honore Fragonard</div>
+                            <div class="t-bot">Louvre Museum</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="arrow-indicator">
+                    <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L8 8L1 15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="card img-5">
+                <div class="info-panel">
+                    <div class="divider"></div>
+                    <div class="wrapper">
+                        <div class="txt default">
+                            <div class="t-top">The Arcadian</div>
+                            <div class="t-bot">1834</div>
+                        </div>
+                        <div class="txt hover">
+                            <div class="t-top">Jean-Honore Fragonard</div>
+                            <div class="t-bot">Louvre Museum</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="arrow-indicator">
+                    <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L8 8L1 15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="card img-6">
+                <div class="info-panel">
+                    <div class="divider"></div>
+                    <div class="wrapper">
+                        <div class="txt default">
+                            <div class="t-top">Golfo di Napoli</div>
+                            <div class="t-bot">1845</div>
+                        </div>
+                        <div class="txt hover">
+                            <div class="t-top">Jean-Honore Fragonard</div>
+                            <div class="t-bot">Louvre Museum</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="arrow-indicator">
+                    <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L8 8L1 15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <div class="pagination">
+            <ul class="pages">
+                <li class="p-item arrow prev">
+                    <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 1L1 5L5 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </li>
+                <li class="p-item active"><span>1</span></li>
+                <li class="p-item"><a href="#">2</a></li>
+                <li class="p-item"><a href="#">3</a></li>
+                <li class="p-item dots"><span>...</span></li>
+                <li class="p-item"><a href="#">9</a></li>
+                <li class="p-item arrow next">
+                    <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L5 5L1 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </li>
+            </ul>
+        </div>
+    </main>
+
+    <!-- Filter Overlay -->
+    <div class="overlay" id="filter-overlay">
+        <div class="overlay-head">
+            <button class="close-btn" id="close-filter">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L13 13M1 13L13 1" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+        </div>
+
+        <div class="f-group">
+            <div class="f-header">
+                <span>Artist</span>
+                <div class="toggle-icon"></div>
+            </div>
+            <div class="f-body">
+                <div class="sel-box">
+                    <select>
+                        <option value="" disabled selected>Select the artist</option>
+                        <option value="monet">Claude Monet</option>
+                        <option value="picasso">Pablo Picasso</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="f-group">
+            <div class="f-header">
+                <span>Location</span>
+                <div class="toggle-icon"></div>
+            </div>
+            <div class="f-body">
+                <div class="sel-box">
+                    <select>
+                        <option value="" disabled selected>Select the location</option>
+                        <option value="louvre">Louvre Museum</option>
+                        <option value="vangogh">Van Gogh Museum</option>
+                        <option value="tretyakov">State Tretyakov Gallery</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="f-group">
+            <div class="f-header">
+                <span>Years</span>
+                <div class="toggle-icon"></div>
+            </div>
+            <div class="f-body">
+                <div class="year-inputs">
+                    <input type="number" placeholder="From">
+                    <div class="dash">
+                        <svg width="10" height="2" viewBox="0 0 10 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 1H10" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <input type="number" placeholder="To">
+                </div>
+            </div>
+        </div>
+
+        <div class="overlay-foot">
+            <span class="res-link">Show the results</span>
+            <span class="clear-link">Clear</span>
+        </div>
+    </div>
+
+    <script>
+        // Simple JS for interaction (if needed, otherwise structure is ready)
+        const filterBtn = document.getElementById('filter-btn');
+        const closeFilter = document.getElementById('close-filter');
+        const overlay = document.getElementById('filter-overlay');
+        const themeBtn = document.querySelector('.btn-theme');
+        const body = document.body;
+
+        if(filterBtn) {
+            filterBtn.addEventListener('click', () => {
+                overlay.classList.add('active');
+            });
+        }
+
+        if(closeFilter) {
+            closeFilter.addEventListener('click', () => {
+                overlay.classList.remove('active');
+            });
+        }
+
+        if(themeBtn) {
+            themeBtn.addEventListener('click', () => {
+                body.classList.toggle('darkTheme');
+            });
+        }
+        
+        // Accordion logic for filters
+        const headers = document.querySelectorAll('.f-header');
+        headers.forEach(header => {
+            header.addEventListener('click', () => {
+                header.parentElement.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
